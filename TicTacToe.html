@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Game Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .top {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .top h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .top p {
+            margin: 5px 0 0 0;
+            font-size: 18px;
+        }
+        .main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .gamebox {
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .gamebox h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .board {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #e0e0e0;
+            border: 2px solid #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: #333;
+        }
+        .choices {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .choice {
+            width: 120px;
+            height: 120px;
+            background-color: #fff;
+            border: 3px solid #4CAF50;
+            border-radius: 10px;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .info {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .scores {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .scorebox {
+            text-align: center;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            min-width: 150px;
+        }
+       .scorebox h3 {
+            margin: 0 0 10px 0;
+            color: #2e7d32;
+        }
+        .scorebox p {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1b5e20;
+        }
+        .bottom {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>🎮 My Game Zone</h1>
+        <p>Simple Games Collection</p>
+    </div>
+    <div class="main">
+        <div class="gamebox">
+            <h2>Tic Tac Toe</h2>
+            <p>Play the classic Tic Tac Toe game. Get three in a row to win!</p>
+            
+            <div class="board">
+                <div class="boxes">
+                    <div class="square">X</div>
+                    <div class="square"></div>
+                    <div class="square">O</div>
+                    <div class="square"></div>
+                    <div class="square">X</div>
+                    <div class="square"></div>
+                    <div class="square">O</div>
+                    <div class="square"></div>
+                    <div class="square">X</div>
+                </div>
+            </div>
+
+            <div class="scores">
+                <div class="scorebox">
+                    <h3>Player</h3>
+                    <p>0</p>
+                </div>
+                <div class="scorebox">
+                    <h3>Computer</h3>
+                    <p>0</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <button class="btn">Start Game</button>
+                <button class="btn">Reset</button>
+            </div>
+        </div>
+        <div class="gamebox">
+            <h2>Rock Paper Scissors</h2>
+            <p>Choose rock, paper, or scissors and try to beat the computer!</p>
+            
+            <div class="choices">
+                <div class="choice">✊</div>
+                <div class="choice">✋</div>
+                <div class="choice">✌️</div>
+            </div>
+            <div class="info">
+                <p><strong>Your Choice:</strong> ?</p>
+                <p><strong>Computer Choice:</strong> ?</p>
+                <p><strong>Result:</strong> Make your choice!</p>
+            </div>
+            <div class="scores">
+                <div class="scorebox">
+                    <h3>Your Wins</h3>
+                    <p>0</p>
+                </div>
+                <div class="scorebox">
+                    <h3>Computer Wins</h3>
+                    <p>0</p>
+                </div>
+                <div class="scorebox">
+                    <h3>Ties</h3>
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="info">
+                <button class="btn">Reset Score</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>rsumity</p>
+    </div>
+</body>
+</html>
